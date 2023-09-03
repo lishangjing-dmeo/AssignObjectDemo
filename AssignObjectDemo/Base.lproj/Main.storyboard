@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qw-6U-EEw">
+                                <rect key="frame" x="128" y="134" width="137" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="创建 NSObject"/>
+                                <connections>
+                                    <action selector="createNSObject:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FwJ-2Z-SMr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qwm-lz-wue">
+                                <rect key="frame" x="93.666666666666686" y="323" width="206" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="创建 NSString (@&quot;123&quot;)"/>
+                                <connections>
+                                    <action selector="createNSString:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TUV-cC-FEG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQq-B1-dhe">
+                                <rect key="frame" x="25" y="519" width="343" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="创建 [NSString stringWithFormat:@&quot;123&quot;]"/>
+                                <connections>
+                                    <action selector="createNSString2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EhR-CY-ubG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rv-QG-2y3">
+                                <rect key="frame" x="21.666666666666657" y="562" width="350" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="创建 [NSString stringWithFormat:@&quot;小强&quot;]"/>
+                                <connections>
+                                    <action selector="createNSString3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aY2-gJ-5UG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBw-Kl-5nl">
+                                <rect key="frame" x="131" y="366" width="131" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="销毁 NSString"/>
+                                <connections>
+                                    <action selector="removeNSString:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dIV-s8-5bT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebH-9G-p9U">
+                                <rect key="frame" x="80.666666666666686" y="407" width="232" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="销毁方法结束后，再次获取"/>
+                                <connections>
+                                    <action selector="resultNSString:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rJZ-F2-uIM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOU-ZM-RiY">
+                                <rect key="frame" x="128" y="186" width="137" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="销毁 NSObject"/>
+                                <connections>
+                                    <action selector="destroyNSObject:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H4C-Am-cS2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NSObject Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvA-AJ-9cA">
+                                <rect key="frame" x="33" y="96" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NSString Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQx-Oc-P6c">
+                                <rect key="frame" x="33" y="276" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NSString 不同的创建方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3b-dy-Wvd">
+                                <rect key="frame" x="33" y="475" width="194" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="销毁使用上面 NSString 的销毁方法" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2e-QB-6kT">
+                                <rect key="frame" x="33" y="619" width="268" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XQq-B1-dhe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7em-So-MkZ"/>
+                            <constraint firstItem="ZBw-Kl-5nl" firstAttribute="centerX" secondItem="Qwm-lz-wue" secondAttribute="centerX" id="7tl-WA-rsd"/>
+                            <constraint firstItem="O3b-dy-Wvd" firstAttribute="leading" secondItem="kQx-Oc-P6c" secondAttribute="leading" id="BaG-MG-M7C"/>
+                            <constraint firstItem="ebH-9G-p9U" firstAttribute="centerX" secondItem="ZBw-Kl-5nl" secondAttribute="centerX" id="F51-IR-fh5"/>
+                            <constraint firstItem="kQx-Oc-P6c" firstAttribute="top" secondItem="mOU-ZM-RiY" secondAttribute="bottom" constant="55" id="K98-87-cjJ"/>
+                            <constraint firstItem="MvA-AJ-9cA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="L3I-aa-ZVd"/>
+                            <constraint firstItem="7qw-6U-EEw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="OvM-8H-F67"/>
+                            <constraint firstItem="kQx-Oc-P6c" firstAttribute="leading" secondItem="MvA-AJ-9cA" secondAttribute="leading" id="P4j-SX-Kh5"/>
+                            <constraint firstItem="7rv-QG-2y3" firstAttribute="centerX" secondItem="XQq-B1-dhe" secondAttribute="centerX" id="Ujz-4r-v3p"/>
+                            <constraint firstItem="7rv-QG-2y3" firstAttribute="top" secondItem="XQq-B1-dhe" secondAttribute="bottom" constant="8" id="VMn-hE-YIC"/>
+                            <constraint firstItem="ebH-9G-p9U" firstAttribute="top" secondItem="ZBw-Kl-5nl" secondAttribute="bottom" constant="6" id="XnC-bD-EFB"/>
+                            <constraint firstItem="Qwm-lz-wue" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="adl-mF-EXg"/>
+                            <constraint firstItem="Qwm-lz-wue" firstAttribute="top" secondItem="kQx-Oc-P6c" secondAttribute="bottom" constant="26" id="axp-CT-caA"/>
+                            <constraint firstItem="ZBw-Kl-5nl" firstAttribute="top" secondItem="Qwm-lz-wue" secondAttribute="bottom" constant="8" id="dL4-cD-JAy"/>
+                            <constraint firstItem="O3b-dy-Wvd" firstAttribute="top" secondItem="ebH-9G-p9U" secondAttribute="bottom" constant="33" id="iFQ-QO-b2p"/>
+                            <constraint firstItem="mOU-ZM-RiY" firstAttribute="top" secondItem="7qw-6U-EEw" secondAttribute="bottom" constant="17" id="jPO-sH-APQ"/>
+                            <constraint firstItem="I2e-QB-6kT" firstAttribute="leading" secondItem="O3b-dy-Wvd" secondAttribute="leading" id="jjB-6y-sTt"/>
+                            <constraint firstItem="XQq-B1-dhe" firstAttribute="top" secondItem="O3b-dy-Wvd" secondAttribute="bottom" constant="23" id="jqr-vi-jQx"/>
+                            <constraint firstItem="I2e-QB-6kT" firstAttribute="top" secondItem="7rv-QG-2y3" secondAttribute="bottom" constant="22" id="mwd-Jh-9Bh"/>
+                            <constraint firstItem="mOU-ZM-RiY" firstAttribute="centerX" secondItem="7qw-6U-EEw" secondAttribute="centerX" id="n5O-Vu-74f"/>
+                            <constraint firstItem="7qw-6U-EEw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tdg-xc-WAy"/>
+                            <constraint firstItem="MvA-AJ-9cA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="tux-y7-Ran"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
